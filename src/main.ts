@@ -38,7 +38,12 @@ app.innerHTML = `
   <section class="editor" id="editor">
     <header class="editor-header">
       <button class="top-action" id="replace-photo" aria-label="换照片">${icon('image', 21)}<span>换照片</span></button>
-      <div class="editor-title"><span>POSTMARK</span><small id="save-state">已自动保存</small></div>
+      <div class="editor-title">
+        <span>POSTMARK</span>
+        <a class="github-link" href="https://github.com/HSwift/photo-stamp" target="_blank" rel="noopener noreferrer" aria-label="在 GitHub 查看 photo-stamp 源码">
+          ${icon('github', 11)}<span>GitHub</span>
+        </a>
+      </div>
       <div class="header-actions">
         <button class="icon-button" id="reset" aria-label="重置">${icon('rotate', 20)}</button>
         <button class="download-button" id="download" aria-label="下载">${icon('download', 19)}<span>保存</span></button>

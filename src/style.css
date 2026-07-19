@@ -40,8 +40,10 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 .top-action, .icon-button, .download-button { border: 0; color: #f5f5f3; background: transparent; cursor: pointer; }
 .top-action { justify-self: start; display: flex; align-items: center; gap: 6px; padding: 8px 3px; font-size: 12px; }
 .editor-title { display: flex; flex-direction: column; align-items: center; gap: 2px; }
-.editor-title span { font-size: 10px; font-weight: 750; letter-spacing: .2em; }
-.editor-title small { color: #777; font-size: 8px; }
+.editor-title > span { font-size: 10px; font-weight: 750; letter-spacing: .2em; }
+.github-link { display: flex; align-items: center; gap: 3px; color: #858589; font-size: 8px; line-height: 1; text-decoration: none; transition: color .18s; }
+.github-link:hover { color: #f5f5f3; }
+.github-link:focus-visible { border-radius: 3px; outline: 2px solid var(--accent); outline-offset: 2px; }
 .header-actions { justify-self: end; display: flex; align-items: center; gap: 7px; }
 .icon-button { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; background: #222225; }
 .download-button { height: 36px; padding: 0 12px; display: flex; align-items: center; gap: 6px; border-radius: 18px; color: #111; background: #f2f1ed; font-size: 11px; font-weight: 700; }
@@ -93,7 +95,6 @@ input[type="range"]::-moz-range-thumb { width: 19px; height: 19px; border: 0; bo
 
 @media (max-height: 700px) and (max-width: 719px) {
   .editor-header { min-height: 54px; }
-  .editor-title small { display: none; }
   .panel { padding-top: 6px; }
   .toolbar { min-height: 55px; }
   .toolbar button { gap: 2px; }
